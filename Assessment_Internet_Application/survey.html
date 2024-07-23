@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">    
+    <script src="script.js"></script>
+
+    <!-- Title of the page -->
+    <title>
+        Climate Change Survey
+    </title>
+    
+</head>
+  
+<body>
+    <h1>
+        <!-- Main title centered -->
+         <center> Climate Change Survey</center>
+   </h1>
+  
+    <!-- Create Survey Form -->
+    <form id="form"> 
+    
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Full Name (max 20 characters)
+            </label>
+ 
+            <!-- Input FUll Name -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" maxlength="20" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" required/>
+        </div>
+
+         <!-- Password Input -->
+        <div class="form-control">
+            <label for="password"> Password
+            </label>
+
+            <input type="text" id="password" placeholder="Enter your password here" maxlength="17" required>
+
+        </div>
+  
+        <!-- Phone Number Input -->
+        <div class="form-control">
+            <label for="phone" id="label-phone">
+                Phone number (format: 7777-777-777)
+            </label>
+ 
+            <!-- Input Type telephone-->
+            <input type="tel"
+                   id="phone" 
+                   placeholder="Enter your phone number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"/>
+        </div>
+
+         <!-- State Dropdown -->
+        <div class="form-control">
+            <label for="state" id="label-state">
+                Which state are you from?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="state" id="state">
+                <option value="Brisbane">Brisbane</option>
+                <option value="Cairns">Cairns</option>
+                <option value="Melbourne">Melbourne</option>
+                <option value="Rockhampton">Rockhampton</option>
+                <option value="Sydney">Sydney </option>
+                <option value="Townsville">Townsville</option>
+                <option value="Perth">Perth</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <h2>Questionnaire</h2> <br>
+
+        <!-- Sustainability Practices -->
+        <div class="form-control">
+            <label for="sustainability-practices">
+                1. What sustainable practices do you engage in regularly to reduce your carbon footprint? 
+            </label>
+            <input type="text" id="sustainability-practices" name="sustainability-practices" placeholder="Enter your practices here" required>
+        </div>
+  
+         <!-- Awareness of Climate Change -->
+        <div class="form-control">
+            <label
+                for="awareness"> 2. How aware are you of climate change?</label>
+                <input type="text" id="awareness" placeholder="awareness" required>
+            </div>        
+            
+
+        <!-- Information Source -->
+            <div class="form-control">
+                <label for="source">3. Where do you get most of your information on climate change? </label>
+                <select id="source" name="source" required>
+                    <option value="media">Media</option>
+                    <option value="education">Education</option>
+                    <option value="socialMedia">Social Media</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+             <!-- Human Activity -->
+            <div class="form-control">
+                <label>4. Do you believe human activity is significant contributing factor to climate change?</label>
+                <label><input type="radio" name="humanFactor" value="yes" required>Yes</label>
+                <label><input type="radio" name="humanFactor" value="no">No</label>
+
+            </div>
+
+             <!-- Actions to Reduce Carbon Footprint -->
+            <div class="form-control">
+                <label>5. Which actions do you take to reduce your carbon footprint?</label>
+                <label><input type="checkbox" name="actions" value="recycle">Recycling</label>
+                <label><input type="checkbox" name="actions" value="publicTransport">Using public transport</label>
+                <label><input type="checkbox" name="actions" value="energyEfficient">Using energy efficient appliances </label>
+                <label><input type="checkbox" name="actions" value="other">others</label>
+
+            </div>
+
+         <!-- Suggestions for Combating Climate Change -->    
+        <div class="form-control">
+            <label for="comment">
+                6. Any suggestions on how to combat climate change?
+            </label>
+
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here" required>
+            </textarea>
+        </div>
+
+            <!-- Concern for Future Generations -->
+            <div class="form-control">
+                <label>7. How concerned are you about the impacts of climate change on future generations?</label>
+                <select id="concern" name="concern" required>
+                    <option value="veryConcerned">Very Concerned</option>
+                    <option value="concerned">Concerned</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="notConcerned">Not Concerned</option>
+                </select>
+            </div>
+
+            <!-- Environmental Activism -->
+            <div class="form-control">
+                <label>8. Have you ever participated in environmental activism or advocacy?</label>
+                <label><input type="radio" name="activism" value="yes" required>Yes</label>
+                <label><input type="radio" name="activism" value="no">No</label>
+            </div>
+
+            <!-- Frequency of Sustainable Practices -->
+            <div class="form-control">
+                <label>9. How often do you engage in sustainable practices in your daily life?</label>
+                <select id="sustainability" name="sustainability" required>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+
+            <!-- Government Role -->
+            <div class="form-control">
+                <label>10. In your opinion, what role should governments play in addressing climate change?</label>
+                <textarea name="governmentRole" id="governmentRole" placeholder="Enter your opinion here" required></textarea>
+            </div>
+
+            <!-- Optimism about Future -->
+            <div class="form-control">
+              <label>11. How optimistic are you about the future of our planet in relation to climate change? </label>
+              <select id="optimism" name="optimism" required>
+                <option value="veryOptimistic">Very Optimistic</option>
+                <option value="optimistic">Optimistic</option>
+                <option value="neutral">Neutral</option>
+                <option value="pessimistic">Pessimistic</option>
+                <option value="veryPessimistic">Very Pessimistic</option>
+            </select>
+        </div>
+
+        <!-- Effectiveness of Renewable Energy -->
+        <div class="form-control">
+            <label>12. How effective do you think renewable energy sources (solar, wind, etc) are in combating climate change? </label>
+            <select id="renewable" name="renewable" required>
+                <option value="veryEffective">Very Effective</option>
+                <option value="effective">Effective</option>
+                <option value="neutral">Neutral</option>
+                <option value="ineffective">Ineffective</option>
+                <option value="veryInEffective">Very Ineffective</option>
+            </select>
+        </div>
+
+        <!-- Support for Emission Reduction Policies -->
+        <div class="form-control">
+            <label>13. How likely are you to support policies aimed at reducing carbon emissions?</label>
+            <label><input type="checkbox" name="support" value="veryLikely">Very Likely</label>
+            <label><input type="checkbox" name="support" value="likely">Likely</label>
+            <label><input type="checkbox" name="support" value="neutral">Neutral </label>
+            <label><input type="checkbox" name="support" value="unlikely">Unlikely</label>
+            <label><input type="checkbox" name="support" value="veryUnlikely">Very Unlikely</label>
+
+        </div>
+
+         <!-- Trust in Scientific Research -->
+        <div class="form-control">
+            <label>14. How much do you trust scientific research and data on climate change?</label>
+            <select id="trust" name="trust" required>
+                <option value="completelyTrust">Completely Trust</option>
+                <option value="mostlyTrust">Mostly Trust</option>
+                <option value="neutral">Neutral</option>
+                <option value="mostlyDistrust">Mostly Distrust</option>
+                <option value="completelyDistrust">Completely Distrust</option>
+            </select>
+        </div>
+
+        <!-- Willingness to Make Lifestyle Changes -->
+        <div class="form-control">
+            <label>15. How willing are you to make lifestyle changes to reduce your carbon footprint? </label>
+            <select id="willingness" name="willingness" required>
+                <option value="veryWilling">Very Willing</option>
+                <option value="willing">Willing</option>
+                <option value="neutral">Neutral</option>
+                <option value="unwilling">Unwilling</option>
+                <option value="veryUnwilling">Very Unwilling</option>
+            </select>
+        </div>
+  
+        <!-- Submit Button -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+
+</body>
+  
+</html>
